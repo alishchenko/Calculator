@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div id="container">
+      <div id="result">
+        <p id="res_input_field">&nbsp</p>
+        <p id="res_field">0</p>
+      </div>
+      <div id="buttons">
+        <table>
+          <tbody>
+            <tr>
+              <td><button type="button" onclick="plus_minus()">+/-</button></td>
+              <td><button type="button" onclick="ne_plus_minus()">%</button></td>
+              <td><button type="button" onclick="addToExample('!')">x!</button></td>
+              <td><button type="reset" onclick="reset_screen()">C</button></td>
+              <td><button type="reset" onclick="del_symb()">CE</button></td>
+            </tr>
+            <tr>
+              <td><button type="menu" onclick="addToExample('7')">7</button></td>
+              <td><button type="menu" onclick="addToExample('8')">8</button></td>
+              <td><button type="menu" onclick="addToExample('9')">9</button></td>
+              <td><button type="button" onclick="addToExample('*')">*</button></td>
+              <td><button type="button" onclick="addToExample('/')">&#247</button></td>
+            </tr>
+            <tr>
+              <td><button type="menu" onclick="addToExample('4')">4</button></td>
+              <td><button type="menu" onclick="addToExample('5')">5</button></td>
+              <td><button type="menu" onclick="addToExample('6')">6</button></td>
+              <td><button type="button" onclick="addToExample('+')">+</button></td>
+              <td><button type="button" onclick="addToExample('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button type="menu" onclick="addToExample('1')">1</button></td>
+              <td><button type="menu" onclick="addToExample('2')">2</button></td>
+              <td><button type="menu" onclick="addToExample('3')">3</button></td>
+              <td><button type="button" onclick="addToExample('^')">x<sup>n</sup></button></td>
+              <td><button type="button" onclick="addToExample('√')">√</button></td>
+            </tr>
+            <tr>
+              <td><button type="menu" onclick="addToExample('0')">0</button></td>
+              <td><button type="menu" onclick="addToExample('.')">.</button></td>
+              <td><button type="submit" onclick="getResult()">=</button></td>
+              <td><button type="button" onclick="addToExample('(')">(</button></td>
+              <td><button type="button" onclick="addToExample(')')">)</button></td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
